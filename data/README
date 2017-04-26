@@ -1,0 +1,9 @@
+original pcap files - 5days DNS query data: dns_all_20170124_20170130.pcap, dns_all_20170207_20170212.pcap
+
+editcap split files into 1 hour pcaps: split_20170124_20170130, split_20170207_20170212
+
+tshark extract time, srcip, dstip, dns.qry.name for each 1 hour pcap: tshark_20170124_20170130, tshark_20170207_20170212
+
+editcap 6 hour pcap sample from Feb 7 2017: sample_6hr
+
+To extract using tshark: sh tshark_extract.sh [date_range]
